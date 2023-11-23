@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "RTVUcy4M0o54bvwqhkhG7TViEft4Tnp5PXlQw1YV+Oa/9F2QLh3bNEmw+YEArO7cLT3rl2EaJtYlATxdQiHYzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AU0011DM\\source\\repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\DataObject.Cart.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AU0011DM\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\AU0011DM\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
+    "C:\\Users\\AU0011DM\\.nuget\\packages\\nsubstitute\\5.1.0\\nsubstitute.5.1.0.nupkg.sha512",
+    "C:\\Users\\AU0011DM\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+    "C:\\Users\\AU0011DM\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "C:\\Users\\AU0011DM\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
