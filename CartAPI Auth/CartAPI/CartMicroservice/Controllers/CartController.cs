@@ -48,8 +48,7 @@ namespace shoppingcartwebservice.Controllers
         /// <param name="cart">The shopping cart containing Products to be added</param>
         /// <param name="userId">The identifier of the User for whom the Products are added to the cart</param>
         [HttpPost("AddtoCart")]
-        [ProducesResponseType(typeof(CartBasket), (int)HttpStatusCode.OK)]
-        //[Authorize]
+        [Authorize]
         public async Task<IActionResult> AddToCart(CartBasket cart, int userId)
         {
             try
@@ -68,7 +67,6 @@ namespace shoppingcartwebservice.Controllers
         /// </summary>
         /// <param name=cartId</param>
         [HttpDelete("{CartId}")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
         [Authorize]
         public async Task<IActionResult> DeleteCart(int cartId)
         {
