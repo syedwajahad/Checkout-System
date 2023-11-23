@@ -1,0 +1,11 @@
+D:\UsersAPI\users.DataObjects\bin\Debug\net6.0\User.DataObjects.deps.json
+D:\UsersAPI\users.DataObjects\bin\Debug\net6.0\User.DataObjects.dll
+D:\UsersAPI\users.DataObjects\bin\Debug\net6.0\User.DataObjects.pdb
+D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.AssemblyInfoInputs.cache
+D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.AssemblyInfo.cs
+D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.csproj.CoreCompileInputs.cache
+D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.dll
+D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\refint\User.DataObjects.dll
+D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.pdb
+D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\ref\User.DataObjects.dll

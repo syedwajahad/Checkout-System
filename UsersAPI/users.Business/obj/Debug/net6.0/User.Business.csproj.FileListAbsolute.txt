@@ -1,0 +1,17 @@
+D:\UsersAPI\users.Business\bin\Debug\net6.0\User.Business.deps.json
+D:\UsersAPI\users.Business\bin\Debug\net6.0\User.Business.dll
+D:\UsersAPI\users.Business\bin\Debug\net6.0\User.Business.pdb
+D:\UsersAPI\users.Business\bin\Debug\net6.0\User.DataAccess.dll
+D:\UsersAPI\users.Business\bin\Debug\net6.0\User.DataObjects.dll
+D:\UsersAPI\users.Business\bin\Debug\net6.0\User.DataAccess.pdb
+D:\UsersAPI\users.Business\bin\Debug\net6.0\User.DataObjects.pdb
+D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.csproj.AssemblyReference.cache
+D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.AssemblyInfoInputs.cache
+D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.AssemblyInfo.cs
+D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.csproj.CoreCompileInputs.cache
+D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.csproj.CopyComplete
+D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.dll
+D:\UsersAPI\users.Business\obj\Debug\net6.0\refint\User.Business.dll
+D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.pdb
+D:\UsersAPI\users.Business\obj\Debug\net6.0\ref\User.Business.dll

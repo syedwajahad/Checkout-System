@@ -1,0 +1,15 @@
+D:\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataAccess.deps.json
+D:\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataAccess.dll
+D:\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataAccess.pdb
+D:\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataObjects.dll
+D:\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataObjects.pdb
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.csproj.AssemblyReference.cache
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.AssemblyInfoInputs.cache
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.AssemblyInfo.cs
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.csproj.CoreCompileInputs.cache
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.csproj.CopyComplete
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.dll
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\refint\User.DataAccess.dll
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.pdb
+D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\ref\User.DataAccess.dll
