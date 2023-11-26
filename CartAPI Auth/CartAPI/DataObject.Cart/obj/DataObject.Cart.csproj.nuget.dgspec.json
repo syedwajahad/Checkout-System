@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AU0011DM\\source\\repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\DataObject.Cart.csproj": {}
+    "C:\\Users\\AU0011DM\\Source\\Repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\DataObject.Cart.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AU0011DM\\source\\repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\DataObject.Cart.csproj": {
+    "C:\\Users\\AU0011DM\\Source\\Repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\DataObject.Cart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AU0011DM\\source\\repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\DataObject.Cart.csproj",
+        "projectUniqueName": "C:\\Users\\AU0011DM\\Source\\Repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\DataObject.Cart.csproj",
         "projectName": "DataObject.Cart",
-        "projectPath": "C:\\Users\\AU0011DM\\source\\repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\DataObject.Cart.csproj",
+        "projectPath": "C:\\Users\\AU0011DM\\Source\\Repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\DataObject.Cart.csproj",
         "packagesPath": "C:\\Users\\AU0011DM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AU0011DM\\source\\repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\obj\\",
+        "outputPath": "C:\\Users\\AU0011DM\\Source\\Repos\\Checkout-System\\CartAPI Auth\\CartAPI\\DataObject.Cart\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AU0011DM\\AppData\\Roaming\\NuGet\\NuGet.Config",

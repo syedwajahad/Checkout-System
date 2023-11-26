@@ -1,9 +1,10 @@
-﻿using CartDataAccessLayer.Implementation;
-using DomainLayer.Entities;
+﻿using DataAccess.Cart.Interface;
+using DataObject.Cart.Models;
+using System.Linq.Expressions;
 
-namespace cartApplication
+namespace Business.Cart.Implementation
 {
-    public class CartLogic 
+    public class CartLogic
     {
         private readonly ICartDataAccess _cartDataAccess;
         public CartLogic(ICartDataAccess cartDataAccess)
@@ -21,8 +22,8 @@ namespace cartApplication
         {
             try
             {
-                var products = new List<Product>(); 
-                if (product.Offer!=null&& product.Offer.IsUnlimited == true)
+                var products = new List<Product>();
+                if (product.Offer != null && product.Offer.IsUnlimited == true)
                 {
                     var freeProduct = await _cartDataAccess.GetProductByIdAsync(product.Offer.GetProductId);
                     freeProduct.Quantity = product.Quantity * product.Offer.GetUnits;
@@ -43,7 +44,7 @@ namespace cartApplication
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception($"Exception occurred:{ex.Message}");
             }
         }
 
@@ -105,7 +106,7 @@ namespace cartApplication
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message, ex);
+                throw new Exception($"Exception occurred:{ex.Message}");
             }
         }
 
@@ -126,7 +127,7 @@ namespace cartApplication
                     if (offerProduct != null)
                     {
                         var index = IsProductPresentInCart(offerProduct, newCart);
-                        if (index != -1 && newCart.ApplicableOffers != null && newCart.Products!=null)
+                        if (index != -1 && newCart.ApplicableOffers != null && newCart.Products != null)
                         {
                             offerProduct.Quantity = newCart.Products[index].Quantity;
                             newCart.Products[index].ProductDiscount = newCart.Products[index].ProductDiscount + Math.Abs(newCart.Products[index].ProductDiscount - product.Offer.Discount);
@@ -137,7 +138,7 @@ namespace cartApplication
                         }
                         else
                         {
-                            if (product.ProductId == offerProduct.ProductId && newCart.Products!=null)
+                            if (product.ProductId == offerProduct.ProductId && newCart.Products != null)
                             {
                                 product.ProductDiscount = offerProduct.ProductDiscount + Math.Abs(offerProduct.ProductDiscount - product.Offer.Discount);
                                 product.Offer.Discount = Math.Min(product.Quantity, offerProduct.Quantity) * Math.Abs(product.ProductDiscount);
@@ -160,7 +161,8 @@ namespace cartApplication
                     }
                 }
             }
-            catch(Exception ex) { 
+            catch (Exception ex)
+            {
                 throw new Exception(ex.Message);
             };
         }
@@ -173,13 +175,20 @@ namespace cartApplication
         /// <returns> The index of the product</returns>
         public int IsProductPresentInCart(Product product, CartBasket cart)
         {
-            if (cart.Products != null)
+            try
             {
-                return cart.Products.FindIndex((p) => p.ProductId == product.ProductId);
+                if (cart.Products != null)
+                {
+                    return cart.Products.FindIndex((p) => p.ProductId == product.ProductId);
+                }
+                else
+                {
+                    return 0;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return 0;
+                throw new Exception($"Exception occurred:{ex.Message}");
             }
         }
     }

@@ -1,11 +1,11 @@
-﻿using Microsoft.Extensions.Configuration;
-using DomainLayer.Entities;
-using CartDataObject.Entities;
-using Dapper;
-using System.Data.SqlClient;
+﻿using Dapper;
+using DataAccess.Cart.Interface;
+using DataObject.Cart.Models;
+using Microsoft.Extensions.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 
-namespace CartDataAccessLayer.Implementation
+namespace DataAccess.Cart.Implementation
 {
     public class CartDataAccess : ICartDataAccess
     {
@@ -14,7 +14,7 @@ namespace CartDataAccessLayer.Implementation
         public CartDataAccess(IConfiguration config)
         {
             _config = config;
-            _connection = new SqlConnection(_config.GetConnectionString("SQLConnection"));
+            _connection = new SqlConnection(_config.GetConnectionString("SqlConnection"));
         }
 
         /// <summary>
@@ -28,24 +28,26 @@ namespace CartDataAccessLayer.Implementation
             {
                 var cartId = await _connection.ExecuteScalarAsync<int>(Constants.GetCartIdByUserId, new { userId });
                 var cartDictionary = new Dictionary<int, CartBasket>();
-                var result =await _connection.QueryAsync<CartBasket, Product, Offer, CartBasket>(
+                var result = await _connection.QueryAsync<CartBasket, Product, Offer, CartBasket>(
                    Constants.GetCart,
-                   (CartBasket, Product,Offer) => ProcessCartItems(CartBasket, Product, Offer, cartId),
+                   (CartBasket, Product, Offer) => ProcessCartItems(CartBasket, Product, Offer, cartId),
                    new { cartId },
                    splitOn: "ProductId, OfferId");
                 return result.First();
             }
-            catch (SqlException sqlEx) {
-                throw new Exception($"SQL Exception:{sqlEx.Message}");
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
             }
-            finally {
+            finally
+            {
                 if (_connection.State != ConnectionState.Closed)
                 {
                     _connection.Close();
                 }
             }
         }
-        
+
         /// <summary>
         /// Retrieves product details based on the specified product identifier
         /// </summary>
@@ -58,11 +60,12 @@ namespace CartDataAccessLayer.Implementation
                 var product = await _connection.QueryFirstAsync<Product>(Constants.GetProductbyId, new { productId });
                 return product;
             }
-            catch (SqlException sqlEx)
+            catch (Exception e)
             {
-                throw new Exception($"SQL Exception: {sqlEx.Message}");
+                throw new Exception(e.Message);
             }
-            finally {
+            finally
+            {
                 if (_connection.State != ConnectionState.Closed)
                 {
                     _connection.Close();
@@ -81,13 +84,13 @@ namespace CartDataAccessLayer.Implementation
                 var cartId = _connection.ExecuteScalarAsync<int>(Constants.GetCartIdByUserId, new { userId });
                 await _connection.ExecuteAsync(Constants.DeleteCart, new { cartId });
             }
-            catch(SqlException sqlEx)
+            catch (Exception e)
             {
-                throw new Exception($" SQL Exception:{sqlEx.Message}");
+                throw new Exception(e.Message);
             }
             finally
             {
-                if(_connection.State != ConnectionState.Closed)
+                if (_connection.State != ConnectionState.Closed)
                 {
                     _connection.Close();
                 }
@@ -106,11 +109,12 @@ namespace CartDataAccessLayer.Implementation
                 var command = await _connection.ExecuteScalarAsync<int>(Constants.CheckQuantity, new { product.ProductId });
                 return command;
             }
-            catch(SqlException sqlEx)
+            catch (Exception e)
             {
-                throw new Exception($" SQL Exception:{sqlEx.Message}");
+                throw new Exception(e.Message);
             }
-            finally {
+            finally
+            {
                 if (_connection.State != ConnectionState.Closed)
                 {
                     _connection.Close();
@@ -119,10 +123,10 @@ namespace CartDataAccessLayer.Implementation
         }
 
         /// <summary>
-        /// Inserts items into a shopping cart, updating the cart and applying offers.
+        /// Inserts items into a shopping cart, updating the cart and applying offers
         /// </summary>
-        /// <param name="cart">The shopping cart containing Products and offers.</param>
-        /// <param name="userid">The User ID associated with the cart.</param>
+        /// <param name="cart">The shopping cart containing Products and offers</param>
+        /// <param name="userid">The User ID associated with the cart</param>
         /// <returns>CartBasket</returns>
         public async Task<CartBasket> InsertCartItemsAsync(CartBasket cart, int userId)
         {
@@ -175,24 +179,26 @@ namespace CartDataAccessLayer.Implementation
                     return cart;
                 }
             }
-            catch (SqlException sqlEx)
+            catch (Exception e)
             {
-                throw new Exception($" SQL Exception:{sqlEx.Message}");
+                throw new Exception(e.Message);
             }
             return cart;
+
         }
 
         /// <summary>
-        /// Processes and updates a CartBasket by adding Products and applicable offers.
+        /// Processes and updates a CartBasket by adding Products and applicable offers
         /// </summary>
-        /// <param name="CartBasket">The current CartBasket being processed.</param>
-        /// <param name="product">The product to be added to the CartBasket.</param>
-        /// <param name="offer">The offer to be added to the CartBasket's ApplicableOffers.</param>
-        /// <param name="cartId">The identifier of the cart for dictionary tracking.</param>
+        /// <param name="CartBasket">The current CartBasket being processed</param>
+        /// <param name="product">The product to be added to the CartBasket</param>
+        /// <param name="offer">The offer to be added to the CartBasket's ApplicableOffers</param>
+        /// <param name="cartId">The identifier of the cart for dictionary tracking</param>
         /// <returns>CartBasket</returns>
         public CartBasket ProcessCartItems(CartBasket cartBasket, Product product, Offer offer, int cartId)
         {
-            try {
+            try
+            {
                 var cartDictionary = new Dictionary<int, CartBasket>();
 
                 if (!cartDictionary.TryGetValue(cartId, out var existingCart))
@@ -212,9 +218,9 @@ namespace CartDataAccessLayer.Implementation
                 }
                 return existingCart;
             }
-            catch(Exception ex)
+            catch (Exception e)
             {
-                throw new InvalidOperationException($"Error in ProcessCartItems: {ex.Message}");
+                throw new Exception(e.Message);
             }
         }
     }

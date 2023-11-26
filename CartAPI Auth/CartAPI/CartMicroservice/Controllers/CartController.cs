@@ -1,9 +1,8 @@
-﻿using DomainLayer.Entities;
-using Microsoft.AspNetCore.Mvc;
-using Cart.Business.Interface;
-using System.Net;
+﻿using Business.Cart.Interface;
+using DataObject.Cart.Models;
 using Microsoft.AspNetCore.Authorization;
-using DataObject.Cart.Entities;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace shoppingcartwebservice.Controllers
 {
@@ -13,13 +12,11 @@ namespace shoppingcartwebservice.Controllers
     {
         private readonly ICartBusiness _cartBusiness;
         private readonly ILogger<CartController> _logger;
-        private readonly IConfiguration _configuration;
 
-        public CartController(IConfiguration configuration, ICartBusiness cartBusiness, ILogger<CartController> logger)
+        public CartController(ICartBusiness cartBusiness, ILogger<CartController> logger)
         {
             _cartBusiness = cartBusiness;
             _logger = logger;
-            _configuration = configuration;
         }
 
         /// <summary>
@@ -38,7 +35,7 @@ namespace shoppingcartwebservice.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"An exception occurred: {ex.Message}");
-                return StatusCode(500, "Internal Server Error: Unable to retrieve cart.");
+                return StatusCode(500);
             }
         }
 
@@ -48,6 +45,7 @@ namespace shoppingcartwebservice.Controllers
         /// <param name="cart">The shopping cart containing Products to be added</param>
         /// <param name="userId">The identifier of the User for whom the Products are added to the cart</param>
         [HttpPost("AddtoCart")]
+        [ProducesResponseType(typeof(CartBasket), (int)HttpStatusCode.OK)]
         [Authorize]
         public async Task<IActionResult> AddToCart(CartBasket cart, int userId)
         {
@@ -58,15 +56,16 @@ namespace shoppingcartwebservice.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An exception occurred: {ExceptionMessage}", ex.Message);
-                return StatusCode(500, "Internal Server Error: Unable to add items to cart.");
+                _logger.LogError($"An exception occurred: {ex.Message}");
+                return StatusCode(500);
             }
         }
-        // <summary>
+        /// <summary>
         /// Deletes items from the shopping cart for a specified cart identifier.
         /// </summary>
-        /// <param name=cartId</param>
+        /// <param name="cartId"></param>
         [HttpDelete("{CartId}")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
         [Authorize]
         public async Task<IActionResult> DeleteCart(int cartId)
         {
@@ -78,7 +77,7 @@ namespace shoppingcartwebservice.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An exception occurred: {ExceptionMessage}", ex.Message);
-                return StatusCode(500, "Internal Server Error: Unable to delete items in cart.");
+                return StatusCode(500);
             }
         }
 

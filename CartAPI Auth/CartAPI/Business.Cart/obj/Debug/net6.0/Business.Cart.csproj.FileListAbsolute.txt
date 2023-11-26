@@ -83,3 +83,20 @@ C:\Users\AU0011DM\OneDrive - WSA\Desktop\CartAPI Auth\CartAPI\Business.Cart\obj\
 C:\Users\AU0011DM\OneDrive - WSA\Desktop\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\refint\Business.Cart.dll
 C:\Users\AU0011DM\OneDrive - WSA\Desktop\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\Business.Cart.pdb
 C:\Users\AU0011DM\OneDrive - WSA\Desktop\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\ref\Business.Cart.dll
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\Business.Cart.csproj.AssemblyReference.cache
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\Business.Cart.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\Business.Cart.AssemblyInfoInputs.cache
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\Business.Cart.AssemblyInfo.cs
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\Business.Cart.csproj.CoreCompileInputs.cache
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\Business.Cart.dll
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\refint\Business.Cart.dll
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\Business.Cart.pdb
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\bin\Debug\net6.0\Business.Cart.deps.json
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\bin\Debug\net6.0\Business.Cart.dll
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\bin\Debug\net6.0\Business.Cart.pdb
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\bin\Debug\net6.0\DataAccess.Cart.dll
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\bin\Debug\net6.0\DataObject.Cart.dll
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\bin\Debug\net6.0\DataAccess.Cart.pdb
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\bin\Debug\net6.0\DataObject.Cart.pdb
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\Business.Cart.csproj.CopyComplete
+C:\Users\AU0011DM\Source\Repos\Checkout-System\CartAPI Auth\CartAPI\Business.Cart\obj\Debug\net6.0\ref\Business.Cart.dll

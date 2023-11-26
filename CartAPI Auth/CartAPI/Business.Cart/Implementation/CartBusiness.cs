@@ -1,11 +1,9 @@
-﻿using Cart.Business.Interface;
-using DomainLayer.Entities;
-using CartDataAccessLayer.Implementation;
-using cartApplication;
-using DataObject.Cart.Entities;
+﻿using Business.Cart.Interface;
+using DataAccess.Cart.Interface;
+using DataObject.Cart.Models;
 using System.Net;
 
-namespace Cart.Business.Implementation
+namespace Business.Cart.Implementation
 {
     public class CartBusiness : ICartBusiness
     {
@@ -14,7 +12,7 @@ namespace Cart.Business.Implementation
         {
             _cartDataAccess = cartdataaccess;
         }
-        
+
         /// <summary>
         /// Adds Products to the User cart and inserts CartItems into the database
         /// </summary>
@@ -29,17 +27,17 @@ namespace Cart.Business.Implementation
                 var newCart = await obj.AddToCartAsync(cartBasket);
                 var res = await _cartDataAccess.InsertCartItemsAsync(newCart, userId);
                 var response = new ApiResponses<CartBasket>();
-                if(res != null)
+                if (res == null)
+                {
+                    response.Status = HttpStatusCode.NoContent;
+                    response.Result = null;
+                    response.Message = "Products are not added to cart";
+                }
+                else
                 {
                     response.Status = HttpStatusCode.OK;
                     response.Result = res;
                     response.Message = "Products are Added to Cart";
-                }
-                else
-                {
-                    response.Status = HttpStatusCode.NoContent;
-                    response.Result = res;
-                    response.Message = "Products are not added to cart";
                 }
                 return response;
             }
@@ -58,7 +56,7 @@ namespace Cart.Business.Implementation
         {
             try
             {
-                await _cartDataAccess.DeleteCartAsync(cartId);   
+                await _cartDataAccess.DeleteCartAsync(cartId);
             }
             catch (Exception ex)
             {

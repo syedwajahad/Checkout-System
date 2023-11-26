@@ -1,6 +1,7 @@
-using Cart.Business.Implementation;
-using Cart.Business.Interface;
-using CartDataAccessLayer.Implementation;
+using Business.Cart.Implementation;
+using Business.Cart.Interface;
+using DataAccess.Cart.Implementation;
+using DataAccess.Cart.Interface;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -8,11 +9,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<ICartBusiness, CartBusiness>();
 builder.Services.AddTransient<ICartDataAccess, CartDataAccess>();
-
-
-// Add services to the container.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer((options) =>
@@ -39,8 +36,6 @@ builder.Services.AddCors(options =>
     });
 });
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
