@@ -1,0 +1,17 @@
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\bin\Debug\net6.0\Catalog.Business.deps.json
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\bin\Debug\net6.0\Catalog.Business.dll
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\bin\Debug\net6.0\Catalog.Business.pdb
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\bin\Debug\net6.0\Catalog.Core.dll
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\bin\Debug\net6.0\Catalog.infrastructure.dll
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\bin\Debug\net6.0\Catalog.Core.pdb
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\bin\Debug\net6.0\Catalog.infrastructure.pdb
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\Catalog.Business.csproj.AssemblyReference.cache
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\Catalog.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\Catalog.Business.AssemblyInfoInputs.cache
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\Catalog.Business.AssemblyInfo.cs
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\Catalog.Business.csproj.CoreCompileInputs.cache
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\Catalog.Business.csproj.CopyComplete
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\Catalog.Business.dll
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\refint\Catalog.Business.dll
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\Catalog.Business.pdb
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.Business\obj\Debug\net6.0\ref\Catalog.Business.dll

@@ -1,0 +1,15 @@
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\bin\Debug\net6.0\Catalog.infrastructure.deps.json
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\bin\Debug\net6.0\Catalog.infrastructure.dll
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\bin\Debug\net6.0\Catalog.infrastructure.pdb
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\bin\Debug\net6.0\Catalog.Core.dll
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\bin\Debug\net6.0\Catalog.Core.pdb
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\Catalog.infrastructure.csproj.AssemblyReference.cache
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\Catalog.infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\Catalog.infrastructure.AssemblyInfoInputs.cache
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\Catalog.infrastructure.AssemblyInfo.cs
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\Catalog.infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\Catalog.infrastructure.csproj.CopyComplete
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\Catalog.infrastructure.dll
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\refint\Catalog.infrastructure.dll
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\Catalog.infrastructure.pdb
+C:\Users\AU00107G\source\repos\CatalogAPI\Catalog.infrastructure\obj\Debug\net6.0\ref\Catalog.infrastructure.dll

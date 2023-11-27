@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06c3c3d0_002Dc8fd_002D4d0e_002Dbbcd_002D7b87abf1bd9c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="DeleteProduct_ShouldCallRepositoryDeleteMethod_WithCorrectProductId" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::6405E8E2-C3B1-420D-B706-BB2177F199E2::net6.0::Catalog.Test.ProductItemTests.DeleteProduct_ShouldCallRepositoryDeleteMethod_WithCorrectProductId&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::6405E8E2-C3B1-420D-B706-BB2177F199E2::net6.0::Catalog.Test.ProductItemTests.GetAllItems_Called_At_Least_Once&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::6405E8E2-C3B1-420D-B706-BB2177F199E2::net6.0::Catalog.Test.ProductItemTests.GetProductById_ReturnsNull_WhenNotFound&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
