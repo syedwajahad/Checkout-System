@@ -44,7 +44,7 @@ namespace Business.Cart.Implementation
             }
             catch (Exception ex)
             {
-                throw new Exception($"Exception occurred:{ex.Message}");
+                throw new Exception(ex.Message);
             }
         }
 
@@ -99,14 +99,13 @@ namespace Business.Cart.Implementation
                         }
                     }
                 }
-
                 newCart.ApplicableOffers = applicableOffers;
                 newCart.Totalprice = totalCount;
                 return newCart;
             }
             catch (Exception ex)
             {
-                throw new Exception($"Exception occurred:{ex.Message}");
+                throw new Exception(ex.Message);
             }
         }
 
@@ -188,7 +187,7 @@ namespace Business.Cart.Implementation
             }
             catch (Exception ex)
             {
-                throw new Exception($"Exception occurred:{ex.Message}");
+                throw new Exception(ex.Message);
             }
         }
     }

@@ -8,9 +8,9 @@ namespace Business.Cart.Implementation
     public class CartBusiness : ICartBusiness
     {
         private readonly ICartDataAccess _cartDataAccess;
-        public CartBusiness(ICartDataAccess cartdataaccess)
+        public CartBusiness(ICartDataAccess cartDataAccess)
         {
-            _cartDataAccess = cartdataaccess;
+            _cartDataAccess = cartDataAccess;
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace Business.Cart.Implementation
             }
             catch (Exception ex)
             {
-                throw new Exception($"Exception:{ex.Message}");
+                throw new Exception(ex.Message);
             }
 
         }
@@ -60,7 +60,7 @@ namespace Business.Cart.Implementation
             }
             catch (Exception ex)
             {
-                throw new Exception($"Exception:{ex.Message}");
+                throw new Exception(ex.Message);
             }
         }
 
@@ -91,7 +91,7 @@ namespace Business.Cart.Implementation
             }
             catch (Exception ex)
             {
-                throw new Exception($"Exception:{ex.Message}");
+                throw new Exception(ex.Message);
             }
         }
 
@@ -109,7 +109,7 @@ namespace Business.Cart.Implementation
             }
             catch (Exception ex)
             {
-                throw new Exception($"Exception:{ex.Message}");
+                throw new Exception(ex.Message);
             }
         }
 

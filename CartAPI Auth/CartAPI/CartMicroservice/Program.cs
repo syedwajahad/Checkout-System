@@ -14,7 +14,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer((options) =>
 {
-
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateLifetime = true,
@@ -23,18 +22,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidateAudience = false
     };
 });
+
+var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins:url").Value;
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: "cors",
     builder =>
     {
         builder
-        .WithOrigins("http://localhost:3000")
-        .AllowAnyOrigin()
+        .WithOrigins(allowedOrigins)
         .AllowAnyMethod()
         .AllowAnyHeader();
     });
 });
+
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {

@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess.Cart", "DataAcce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataObject.Cart", "DataObject.Cart\DataObject.Cart.csproj", "{65C41FDE-5EA0-4ABC-8AD6-77F988AC3F80}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartAPITests", "TestCartMicroservice\CartAPITests.csproj", "{9A1635B1-FF73-49B9-9736-336BEF635E64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartAPI.Tests", "TestCartMicroservice\CartAPI.Tests.csproj", "{9A1635B1-FF73-49B9-9736-336BEF635E64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -34,7 +34,7 @@ namespace shoppingcartwebservice.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"An exception occurred: {ex.Message}");
+                _logger.LogError(ex.Message);
                 return StatusCode(500);
             }
         }
@@ -56,7 +56,7 @@ namespace shoppingcartwebservice.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"An exception occurred: {ex.Message}");
+                _logger.LogError(ex.Message);
                 return StatusCode(500);
             }
         }
@@ -76,7 +76,7 @@ namespace shoppingcartwebservice.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An exception occurred: {ExceptionMessage}", ex.Message);
+                _logger.LogError(ex.Message);
                 return StatusCode(500);
             }
         }

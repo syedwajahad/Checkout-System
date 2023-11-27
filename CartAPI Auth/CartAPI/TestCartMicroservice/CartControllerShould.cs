@@ -7,7 +7,7 @@ using NSubstitute;
 using shoppingcartwebservice.Controllers;
 using System.Net;
 
-namespace CartAPITests
+namespace CartAPI.Tests
 {
     public class CartControllerShould
     {
@@ -21,7 +21,7 @@ namespace CartAPITests
         }
 
         [Fact]
-        public async Task ReturnsOkWhenCartIsPresent()
+        public async Task ReturnOkWhenCartIsPresent()
         {
             // Arrange
             int userId = 1;
@@ -39,13 +39,13 @@ namespace CartAPITests
             var result = await controller.Getcart(userId) as OkObjectResult;
 
             // Assert
-            result.Should().NotBeNull().And.BeAssignableTo<OkObjectResult>();
+            result.Should().BeAssignableTo<OkObjectResult>();
             result?.StatusCode.Should().Be(200);
             result?.Value.Should().BeEquivalentTo(expectedCart, options => options.ExcludingMissingMembers());
         }
 
         [Fact]
-        public async Task ReturnsOkWhenAddToCartSucceeds()
+        public async Task ReturnOkWhenAddToCartSucceeds()
         {
             // Arrange
             int userId = 1;
@@ -64,13 +64,13 @@ namespace CartAPITests
             var result = await controller.AddToCart(cart, userId) as OkObjectResult;
 
             // Assert
-            result.Should().NotBeNull().And.BeAssignableTo<OkObjectResult>();
+            result.Should().BeAssignableTo<OkObjectResult>();
             result?.StatusCode.Should().Be(200);
             result?.Value.Should().BeEquivalentTo(expectedCart, options => options.ExcludingMissingMembers());
         }
 
         [Fact]
-        public async Task ReturnsOkWhenCartIsDeleted()
+        public async Task ReturnOkWhenCartIsDeleted()
         {
             // Arrange
             int cartId = 1;

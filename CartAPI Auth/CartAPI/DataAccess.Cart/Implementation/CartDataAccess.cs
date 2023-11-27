@@ -26,18 +26,18 @@ namespace DataAccess.Cart.Implementation
         {
             try
             {
-                var cartId = await _connection.ExecuteScalarAsync<int>(Constants.GetCartIdByUserId, new { userId });
+                var cartId = await _connection.ExecuteScalarAsync<int>(Constants.GET_CARTID_BY_USERID, new { userId });
                 var cartDictionary = new Dictionary<int, CartBasket>();
                 var result = await _connection.QueryAsync<CartBasket, Product, Offer, CartBasket>(
-                   Constants.GetCart,
+                   Constants.GET_CART,
                    (CartBasket, Product, Offer) => ProcessCartItems(CartBasket, Product, Offer, cartId),
                    new { cartId },
                    splitOn: "ProductId, OfferId");
                 return result.First();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
             finally
             {
@@ -57,12 +57,12 @@ namespace DataAccess.Cart.Implementation
         {
             try
             {
-                var product = await _connection.QueryFirstAsync<Product>(Constants.GetProductbyId, new { productId });
+                var product = await _connection.QueryFirstAsync<Product>(Constants.GET_PRODUCT_BY_ID, new { productId });
                 return product;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
             finally
             {
@@ -81,12 +81,12 @@ namespace DataAccess.Cart.Implementation
         {
             try
             {
-                var cartId = _connection.ExecuteScalarAsync<int>(Constants.GetCartIdByUserId, new { userId });
-                await _connection.ExecuteAsync(Constants.DeleteCart, new { cartId });
+                var cartId = _connection.ExecuteScalarAsync<int>(Constants.GET_CARTID_BY_USERID, new { userId });
+                await _connection.ExecuteAsync(Constants.DELETE_CART, new { cartId });
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
             finally
             {
@@ -106,12 +106,12 @@ namespace DataAccess.Cart.Implementation
         {
             try
             {
-                var command = await _connection.ExecuteScalarAsync<int>(Constants.CheckQuantity, new { product.ProductId });
+                var command = await _connection.ExecuteScalarAsync<int>(Constants.CHECK_QUANTITY, new { product.ProductId });
                 return command;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
             finally
             {
@@ -136,10 +136,10 @@ namespace DataAccess.Cart.Implementation
                 {
                     foreach (var product in cart.Products)
                     {
-                        var cartId = await _connection.ExecuteScalarAsync<int>(Constants.GetCartIdByUserId, new { userId });
+                        var cartId = await _connection.ExecuteScalarAsync<int>(Constants.GET_CARTID_BY_USERID, new { userId });
                         cart.CartId = cartId;
-                        await _connection.ExecuteAsync(Constants.DeleteCart, new { cartId });
-                        var command = await _connection.ExecuteScalarAsync<int>(Constants.CheckQuantity, new { id = product.ProductId });
+                        await _connection.ExecuteAsync(Constants.DELETE_CART, new { cartId });
+                        var command = await _connection.ExecuteScalarAsync<int>(Constants.CHECK_QUANTITY, new { id = product.ProductId });
                         if (command >= product.Quantity)
                         {
                             var productInfo = new
@@ -149,7 +149,7 @@ namespace DataAccess.Cart.Implementation
                                 price = product.Price,
                                 cartId,
                             };
-                            var output = await _connection.ExecuteAsync(Constants.InsertCartItems, productInfo);
+                            var output = await _connection.ExecuteAsync(Constants.INSERT_CARTITEMS, productInfo);
                             if (output == 0)
                             {
                                 throw new Exception("Insertion failed");
@@ -169,7 +169,7 @@ namespace DataAccess.Cart.Implementation
                                 cartId = cart.CartId,
                                 offerId = offer.OfferId
                             };
-                            var res = await _connection.ExecuteAsync(Constants.InsertCartOffers, offerInfo);
+                            var res = await _connection.ExecuteAsync(Constants.INSERT_CARTOFFERS, offerInfo);
                             if (res == 0)
                             {
                                 return cart;
@@ -179,9 +179,9 @@ namespace DataAccess.Cart.Implementation
                     return cart;
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
             return cart;
 
@@ -218,9 +218,9 @@ namespace DataAccess.Cart.Implementation
                 }
                 return existingCart;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
         }
     }
