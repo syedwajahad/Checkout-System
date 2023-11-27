@@ -1,6 +1,6 @@
-﻿using DomainLayer.Entities;
+﻿using DataObject.Cart.Models;
 
-namespace CartDataAccessLayer.Implementation
+namespace DataAccess.Cart.Interface
 {
     public interface ICartDataAccess
     {

@@ -1,6 +1,7 @@
-using Cart.Business.Implementation;
-using Cart.Business.Interface;
-using CartDataAccessLayer.Implementation;
+using Business.Cart.Implementation;
+using Business.Cart.Interface;
+using DataAccess.Cart.Implementation;
+using DataAccess.Cart.Interface;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -8,16 +9,11 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<ICartBusiness, CartBusiness>();
 builder.Services.AddTransient<ICartDataAccess, CartDataAccess>();
-
-
-// Add services to the container.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer((options) =>
 {
-
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateLifetime = true,
@@ -26,21 +22,21 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidateAudience = false
     };
 });
+
+var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins:url").Value;
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: "cors",
     builder =>
     {
         builder
-        .WithOrigins("http://localhost:3000")
-        .AllowAnyOrigin()
+        .WithOrigins(allowedOrigins)
         .AllowAnyMethod()
         .AllowAnyHeader();
     });
 });
-var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

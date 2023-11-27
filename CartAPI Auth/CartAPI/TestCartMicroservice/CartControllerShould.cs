@@ -1,39 +1,32 @@
+using Business.Cart.Interface;
+using DataObject.Cart.Models;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
-using NSubstitute;
-using Xunit;
-using shoppingcartwebservice.Controllers;
-using Cart.Business.Interface;
-using DomainLayer.Entities;
-using System.Threading.Tasks;
-using System;
-using System.Net;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Configuration;
-using DataObject.Cart.Entities;
+using NSubstitute;
+using shoppingcartwebservice.Controllers;
+using System.Net;
 
-namespace YourNamespace.Tests
+namespace CartAPI.Tests
 {
-    public class CartControllerTests
+    public class CartControllerShould
     {
         private readonly ICartBusiness _cartBusiness;
         private readonly ILogger<CartController> _logger;
-        private readonly IConfiguration _configuration;
 
-        public CartControllerTests()
+        public CartControllerShould()
         {
             _cartBusiness = Substitute.For<ICartBusiness>();
             _logger = Substitute.For<ILogger<CartController>>();
-            _configuration = Substitute.For<IConfiguration>();
         }
 
         [Fact]
-        public async Task GetCart_ReturnsOk()
+        public async Task ReturnOkWhenCartIsPresent()
         {
             // Arrange
             int userId = 1;
             var expectedCart = new CartBasket();
-            var controller = new CartController(_configuration, _cartBusiness, _logger);
+            var controller = new CartController(_cartBusiness, _logger);
             _cartBusiness.GetCartAsync(Arg.Any<int>()).Returns(Task.FromResult<ApiResponses<CartBasket>>(new ApiResponses<CartBasket>
             {
                 Status = HttpStatusCode.OK,
@@ -46,19 +39,19 @@ namespace YourNamespace.Tests
             var result = await controller.Getcart(userId) as OkObjectResult;
 
             // Assert
-            result.Should().NotBeNull().And.BeAssignableTo<OkObjectResult>();
+            result.Should().BeAssignableTo<OkObjectResult>();
             result?.StatusCode.Should().Be(200);
             result?.Value.Should().BeEquivalentTo(expectedCart, options => options.ExcludingMissingMembers());
         }
 
         [Fact]
-        public async Task AddToCart_ReturnsOk()
+        public async Task ReturnOkWhenAddToCartSucceeds()
         {
             // Arrange
             int userId = 1;
             var cart = new CartBasket();
             var expectedCart = new CartBasket();
-            var controller = new CartController(_configuration, _cartBusiness, _logger);
+            var controller = new CartController(_cartBusiness, _logger);
             _cartBusiness.AddToCartAsync(Arg.Any<CartBasket>(), Arg.Any<int>()).Returns(Task.FromResult<ApiResponses<CartBasket>>(new ApiResponses<CartBasket>
             {
                 Status = HttpStatusCode.OK,
@@ -71,17 +64,17 @@ namespace YourNamespace.Tests
             var result = await controller.AddToCart(cart, userId) as OkObjectResult;
 
             // Assert
-            result.Should().NotBeNull().And.BeAssignableTo<OkObjectResult>();
+            result.Should().BeAssignableTo<OkObjectResult>();
             result?.StatusCode.Should().Be(200);
             result?.Value.Should().BeEquivalentTo(expectedCart, options => options.ExcludingMissingMembers());
         }
 
         [Fact]
-        public async Task DeleteCart_ReturnsOk()
+        public async Task ReturnOkWhenCartIsDeleted()
         {
             // Arrange
             int cartId = 1;
-            var controller = new CartController(_configuration, _cartBusiness, _logger);
+            var controller = new CartController(_cartBusiness, _logger);
 
             // Act
             var result = await controller.DeleteCart(cartId) as OkResult;
