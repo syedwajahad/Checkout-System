@@ -15,3 +15,20 @@ D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.dll
 D:\UsersAPI\users.Business\obj\Debug\net6.0\refint\User.Business.dll
 D:\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.pdb
 D:\UsersAPI\users.Business\obj\Debug\net6.0\ref\User.Business.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\bin\Debug\net6.0\User.Business.deps.json
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\bin\Debug\net6.0\User.Business.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\bin\Debug\net6.0\User.Business.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\bin\Debug\net6.0\User.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\bin\Debug\net6.0\User.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\bin\Debug\net6.0\User.DataAccess.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\bin\Debug\net6.0\User.DataObjects.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.csproj.AssemblyReference.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.AssemblyInfoInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.AssemblyInfo.cs
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.csproj.CoreCompileInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.csproj.CopyComplete
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\refint\User.Business.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\User.Business.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.Business\obj\Debug\net6.0\ref\User.Business.dll

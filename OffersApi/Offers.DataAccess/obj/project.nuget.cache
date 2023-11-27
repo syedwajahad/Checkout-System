@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6qri5MxLNiNBNQDvMsF/3ZCiNhU/l2VFZkcvOmUa0zp+7twXXDs6GKFr9wDu4NsFpaAqt7XxpLfgovvzCQg4xQ==",
+  "dgSpecHash": "35e8p8RIsYI3jr2bceQRSlgnklknifPXniggQmCjLDUYuGL5eE0SF8z03o5nanucLLxjpxh7JWsEl6eLeN8Vpw==",
   "success": true,
-  "projectFilePath": "D:\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AU0011ES\\.nuget\\packages\\dapper\\2.1.21\\dapper.2.1.21.nupkg.sha512",
     "C:\\Users\\AU0011ES\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

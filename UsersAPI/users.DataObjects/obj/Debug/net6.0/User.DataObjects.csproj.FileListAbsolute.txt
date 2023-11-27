@@ -9,3 +9,14 @@ D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.dll
 D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\refint\User.DataObjects.dll
 D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.pdb
 D:\UsersAPI\users.DataObjects\obj\Debug\net6.0\ref\User.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\bin\Debug\net6.0\User.DataObjects.deps.json
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\bin\Debug\net6.0\User.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\bin\Debug\net6.0\User.DataObjects.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.AssemblyInfoInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.AssemblyInfo.cs
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.csproj.CoreCompileInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\obj\Debug\net6.0\refint\User.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\obj\Debug\net6.0\User.DataObjects.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataObjects\obj\Debug\net6.0\ref\User.DataObjects.dll

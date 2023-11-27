@@ -13,7 +13,7 @@ namespace users.DataAccess.implementation
         public UserDataAccess(IConfiguration config)
         {
             _config = config;
-            _connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            _connection = new SqlConnection(_config.GetConnectionString("SQLConnection"));
         }
         /// <summary>
         /// Creates a new user asynchronously or returns an existing user if the email already exists.
@@ -33,7 +33,6 @@ namespace users.DataAccess.implementation
                     email = user.UserEmail,
                     role = user.UserRole
                 };
-                //Todo: negative conditions should come first
                 var existingUser = await _connection.QueryFirstOrDefaultAsync<User>(Queries.CheckUsers, new { email = user.UserEmail });
                 if (existingUser != null)
                 {
@@ -100,8 +99,8 @@ namespace users.DataAccess.implementation
         {
             try
             {
-                var isUserPresent = await _connection.QueryFirstAsync<User>(Queries.checkUser, new {UserId =  userId});
-                if(isUserPresent != null)
+                var isUserPresent = await _connection.QueryFirstAsync<User>(Queries.CheckUser, new { UserId = userId });
+                if (isUserPresent != null)
                 {
                     var obj = new
                     {
@@ -138,5 +137,6 @@ namespace users.DataAccess.implementation
                 throw new Exception($"Exception message : {ex.Message}");
             }
         }
+
     }
 }

@@ -9,3 +9,14 @@ D:\OffersApi\offers.DataObjects\obj\Debug\net6.0\Offer.DataObjects.dll
 D:\OffersApi\offers.DataObjects\obj\Debug\net6.0\refint\Offer.DataObjects.dll
 D:\OffersApi\offers.DataObjects\obj\Debug\net6.0\Offer.DataObjects.pdb
 D:\OffersApi\offers.DataObjects\obj\Debug\net6.0\ref\Offer.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\bin\Debug\net6.0\Offer.DataObjects.deps.json
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\bin\Debug\net6.0\Offer.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\bin\Debug\net6.0\Offer.DataObjects.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\obj\Debug\net6.0\Offer.DataObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\obj\Debug\net6.0\Offer.DataObjects.AssemblyInfoInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\obj\Debug\net6.0\Offer.DataObjects.AssemblyInfo.cs
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\obj\Debug\net6.0\Offer.DataObjects.csproj.CoreCompileInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\obj\Debug\net6.0\Offer.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\obj\Debug\net6.0\refint\Offer.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\obj\Debug\net6.0\Offer.DataObjects.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.DataObjects\obj\Debug\net6.0\ref\Offer.DataObjects.dll

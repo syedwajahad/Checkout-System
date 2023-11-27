@@ -34,7 +34,7 @@ namespace offers.DataAccess.Implementation
             try
             {
                 var isProductExist = await _connection.QueryFirstAsync<Offer>(Queries.CheckOffers, new { ProductId = ProductId });
-                if(isProductExist != null)
+                if(isProductExist == null)
                 {
                     throw new Exception("Product not found");
                 }

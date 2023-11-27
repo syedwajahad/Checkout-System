@@ -14,23 +14,17 @@ namespace UsersAPI.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserBusiness _userBusiness;
-        private readonly IConfiguration _configuration;
-        private readonly ILogger<UserController> _logger;
-      
-
-        public UserController(IUserBusiness userBusiness, IConfiguration configuration, ILogger<UserController> logger)
+       
+   
+        public UserController(IUserBusiness userBusiness)
         {
             _userBusiness = userBusiness;
-            _configuration = configuration;
-            _logger = logger;
+      
         }
-
-     
-
         [HttpPost]
         [Route("CreateUser")]
-        [ProducesResponseType(typeof(IList<User>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<User>>> CeateUser(User user)
+        [Authorize]
+        public async Task<ActionResult> CreateUser(User user)
         {
             try
             {
@@ -45,8 +39,7 @@ namespace UsersAPI.Controllers
                 }
                 else
                 {
-                    var token = CreateToken(output.Data);
-                    HttpContext.Response.Headers.Add("Auth", token.ToString());
+                    
                     return Ok(output);
                 }
             }
@@ -57,9 +50,20 @@ namespace UsersAPI.Controllers
         }
         [HttpGet]
         [Route("GetAllUsers")]
-        [ProducesResponseType(typeof(IList<User>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<List<User>>>> GetAllUsers()
+        [Authorize]
+        public async Task<ActionResult> GetAllUsers()
         {
+            var token = new JwtSecurityTokenHandler();
+            var valid = token.ReadJwtToken(HttpContext.Request.Headers.Authorization.ToString().Split(" ")[1]);
+            var roles = new List<String>() { "ADMIN" };
+
+            var userRole = valid.Claims.ToList().Find((claim) => claim.Type == "role");
+            var authorizedRoles = roles.Find((role) => role == userRole.Value);
+            if (authorizedRoles.Length == 0)
+            {
+                return Unauthorized();
+            }
+
             try
             {
                 var response = await _userBusiness.GetAllUsers();
@@ -72,8 +76,8 @@ namespace UsersAPI.Controllers
         }
         [HttpGet]
         [Route("{UserId}")]
-        [ProducesResponseType(typeof(IList<User>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<User>>> GetUsersById(int UserId)
+        [Authorize]
+        public async Task<ActionResult> GetUsersById(int UserId)
         {
             try
             {
@@ -87,9 +91,19 @@ namespace UsersAPI.Controllers
         }
         [HttpPut]
         [Route("{UserId}")]
-        [ProducesResponseType(typeof(IList<User>), (int)HttpStatusCode.OK)]
+        [Authorize]
         public async Task<IActionResult> UpdateUsers(User user, int UserId)
         {
+            var token = new JwtSecurityTokenHandler();
+            var valid = token.ReadJwtToken(HttpContext.Request.Headers.Authorization.ToString().Split(" ")[1]);
+            var roles = new List<String>() { "ADMIN" };
+
+            var userRole = valid.Claims.ToList().Find((claim) => claim.Type == "role");
+            var authorizedRoles = roles.Find((role) => role == userRole.Value);
+            if (authorizedRoles.Length == 0)
+            {
+                return Unauthorized();
+            }
             try
             {
                 var response = await _userBusiness.UpdateUsers(user, UserId);
@@ -102,8 +116,8 @@ namespace UsersAPI.Controllers
         }
         [HttpDelete]
         [Route("{UserId}")]
-        [ProducesResponseType(typeof(IList<User>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<User>>> DeleteUsers(int UserId)
+        [Authorize]
+        public async Task<ActionResult> DeleteUsers(int UserId)
         {
             try
             {
@@ -115,46 +129,7 @@ namespace UsersAPI.Controllers
                 return BadRequest(ex.Message);
             }            
         }
-        private string CreateToken(User users)
-        {
-            List<Claim> claims = new()
-            {
-                new Claim(ClaimTypes.Role, users.UserRole),
-                 new Claim(ClaimTypes.NameIdentifier, users.UserId.ToString()),
-            };
-
-            var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(_configuration.GetSection("Jwt:Key").Value));
-            var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var token = new JwtSecurityToken(
-                claims: claims,
-                expires: DateTime.Now.AddHours(2),
-                signingCredentials: cred
-            );
-
-            var jwt = new JwtSecurityTokenHandler().WriteToken(token);
-
-            return jwt;
-        }
-        private List<String> GetTokenValues(string requestToken)
-        {
-            var token = new JwtSecurityTokenHandler();
-            var valid = token.ReadJwtToken(requestToken);
-            var role = "";
-            var userId = "";
-            foreach (var user in valid.Claims)
-            {
-                if (user.Type == ClaimTypes.Role)
-                {
-                    role = user.Value;
-
-                }
-                if (user.Type == ClaimTypes.NameIdentifier)
-                {
-                    userId = user.Value;
-                }
-            }
-            return new List<String> { userId, role };
-        }
+       
     }
 }
 

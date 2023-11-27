@@ -8,8 +8,7 @@
         public static string GetUser = $"select * from Users Where UserId = @UserId";
         public static string ChangeUser = $"UPDATE Users set UserRole= @role where UserId = @UserId";
         public static string RemoveUsers= $"DELETE FROM Users  where UserId = @UserId";
-
-        public static string checkUser = $"select * from users where userId = @UserId";
+        public static string CheckUser = $"select * from users where userId = @UserId";
 
     }
 }

@@ -20,7 +20,7 @@ namespace OffersApi.Controllers
         [HttpGet]
         [Route("{ProductId}")]
         [ProducesResponseType(typeof(IList<Offer>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<List<Offer>>>> GetOffers(int ProductId)
+        public async Task<ActionResult> GetOffers(int ProductId)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace OffersApi.Controllers
         [HttpDelete]
         [Route("{OfferId}")]
         [ProducesResponseType(typeof(IList<Offer>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ApiResponse<Offer>>> DeleteOffers(int OfferId)
+        public async Task<ActionResult> DeleteOffers(int OfferId)
         {
             try
             {

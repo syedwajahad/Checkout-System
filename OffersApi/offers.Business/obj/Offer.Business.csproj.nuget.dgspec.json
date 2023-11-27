@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OffersApi\\offers.Business\\Offer.Business.csproj": {}
+    "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.Business\\Offer.Business.csproj": {}
   },
   "projects": {
-    "D:\\OffersApi\\offers.Business\\Offer.Business.csproj": {
+    "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.Business\\Offer.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OffersApi\\offers.Business\\Offer.Business.csproj",
+        "projectUniqueName": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.Business\\Offer.Business.csproj",
         "projectName": "Offer.Business",
-        "projectPath": "D:\\OffersApi\\offers.Business\\Offer.Business.csproj",
+        "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.Business\\Offer.Business.csproj",
         "packagesPath": "C:\\Users\\AU0011ES\\.nuget\\packages\\",
-        "outputPath": "D:\\OffersApi\\offers.Business\\obj\\",
+        "outputPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj": {
-                "projectPath": "D:\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj"
+              "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj"
               },
-              "D:\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj": {
-                "projectPath": "D:\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj"
+              "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj": {
+                "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "D:\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj": {
+    "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj",
         "projectName": "Offer.DataAccess",
-        "projectPath": "D:\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj",
+        "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\Offers.DataAccess\\Offer.DataAccess.csproj",
         "packagesPath": "C:\\Users\\AU0011ES\\.nuget\\packages\\",
-        "outputPath": "D:\\OffersApi\\Offers.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\Offers.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,8 +98,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj": {
-                "projectPath": "D:\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj"
+              "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj": {
+                "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj"
               }
             }
           }
@@ -147,14 +147,14 @@
         }
       }
     },
-    "D:\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj": {
+    "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj",
+        "projectUniqueName": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj",
         "projectName": "Offer.DataObjects",
-        "projectPath": "D:\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj",
+        "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.DataObjects\\Offer.DataObjects.csproj",
         "packagesPath": "C:\\Users\\AU0011ES\\.nuget\\packages\\",
-        "outputPath": "D:\\OffersApi\\offers.DataObjects\\obj\\",
+        "outputPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\offers.DataObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

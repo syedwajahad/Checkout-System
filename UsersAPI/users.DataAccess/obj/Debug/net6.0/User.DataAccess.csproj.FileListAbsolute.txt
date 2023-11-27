@@ -13,3 +13,18 @@ D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.dll
 D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\refint\User.DataAccess.dll
 D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.pdb
 D:\UsersAPI\users.DataAccess\obj\Debug\net6.0\ref\User.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataAccess.deps.json
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataAccess.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\bin\Debug\net6.0\User.DataObjects.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.csproj.AssemblyReference.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.AssemblyInfoInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.AssemblyInfo.cs
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.csproj.CopyComplete
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\refint\User.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\User.DataAccess.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\UsersAPI\users.DataAccess\obj\Debug\net6.0\ref\User.DataAccess.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5SlenmtzjK7hlFS4R3FZDiOrn+qT+U9EFqmnk/oq4ULsPImGA9D5gz71/SXna9ELMbjbbGLkBkXVCzeYwL+ZSQ==",
+  "dgSpecHash": "Kt9UZoi+yX8tauCytFsZNcwnf785bRtsZ+xwmbf5OqMfS/J6vk65SOUx9+JceEawDaGChobG4JTbQoDBDtdAKQ==",
   "success": true,
-  "projectFilePath": "D:\\OffersApi\\OffersApi\\OffersApi.csproj",
+  "projectFilePath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\OffersApi\\OffersApi\\OffersApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AU0011ES\\.nuget\\packages\\dapper\\2.1.21\\dapper.2.1.21.nupkg.sha512",
     "C:\\Users\\AU0011ES\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.24\\microsoft.aspnetcore.authentication.jwtbearer.6.0.24.nupkg.sha512",

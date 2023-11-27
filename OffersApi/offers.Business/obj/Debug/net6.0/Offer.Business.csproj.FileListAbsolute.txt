@@ -15,3 +15,20 @@ D:\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.dll
 D:\OffersApi\offers.Business\obj\Debug\net6.0\refint\Offer.Business.dll
 D:\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.pdb
 D:\OffersApi\offers.Business\obj\Debug\net6.0\ref\Offer.Business.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\bin\Debug\net6.0\Offer.Business.deps.json
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\bin\Debug\net6.0\Offer.Business.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\bin\Debug\net6.0\Offer.Business.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\bin\Debug\net6.0\Offer.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\bin\Debug\net6.0\Offer.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\bin\Debug\net6.0\Offer.DataAccess.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\bin\Debug\net6.0\Offer.DataObjects.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.csproj.AssemblyReference.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.AssemblyInfoInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.AssemblyInfo.cs
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.csproj.CoreCompileInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.csproj.CopyComplete
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\refint\Offer.Business.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\Offer.Business.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\offers.Business\obj\Debug\net6.0\ref\Offer.Business.dll

@@ -108,14 +108,12 @@ namespace UsersApiTest
     public class UserControllerTests
     {
         private readonly IUserBusiness _userBusiness;
-        private readonly IConfiguration _configuration;
-        private readonly ILogger<UserController> _logger;
+
+
 
         public UserControllerTests()
         {
             _userBusiness = Substitute.For<IUserBusiness>();
-            _configuration = Substitute.For<IConfiguration>();
-            _logger = Substitute.For<ILogger<UserController>>();
         }
 
         //[Fact]
@@ -141,43 +139,68 @@ namespace UsersApiTest
         //   .Which.Data.Should().BeEquivalentTo(user);
 
         //}
+        //[Fact]
+        //public async Task GetAllUsers_ReturnsOkObjectResult_WithValidData()
+        //{
+        //    // Arrange
+        //    var controller = new UserController(_userBusiness, _configuration, _logger);
+        //    var userList = new List<User> { /* Add user objects here */ };
+        //    _userBusiness.GetAllUsers().Returns(Task.FromResult(new ApiResponse<List<User>> { Data = userList }));
+
+        //    // Act
+        //    var result = await controller.GetAllUsers();
+
+        //    // Assert
+        //    result.Should().BeOfType<OkObjectResult>().Which.Value.Should().BeOfType<ApiResponse<List<User>>>()
+        //        .Which.Data.Should().BeEquivalentTo(userList);
+        //}
+
+        //[Fact]
+        //public async Task GetUsersById_ReturnsOkObjectResult_WithValidData()
+        //{
+        //    // Arrange
+        //    var controller = new UserController(_userBusiness, _configuration, _logger);
+        //    var userId = 1;
+        //    var user = new User {new User { Id = 1, FirstName = "John", LastName = "Doe" },
+        //        new User { Id = 2, FirstName = "Jane", LastName = "Doe" }
+        //    };
+        //    _userBusiness.GetUsersById(userId).Returns(Task.FromResult(new ApiResponse<User> { Data = user }));
+
+        //    // Act
+        //    var result = await controller.GetUsersById(userId);
+
+        //    // Assert
+        //    result.Should().BeOfType<OkObjectResult>().Which.Value.Should().BeOfType<ApiResponse<User>>()
+        //        .Which.Data.Should().BeEquivalentTo(user);
+        //}
         [Fact]
-        public async Task GetAllUsers_ReturnsOkObjectResult_WithValidData()
+        public async Task CreateUser_ValidUser_ReturnsOk()
         {
             // Arrange
-            var controller = new UserController(_userBusiness, _configuration, _logger);
-            var userList = new List<User> { /* Add user objects here */ };
-            _userBusiness.GetAllUsers().Returns(Task.FromResult(new ApiResponse<List<User>> { Data = userList }));
+            var userBusinessMock = Substitute.For<IUserBusiness>();
+            var controller = new UserController(_userBusiness); // Assuming UserController is the class containing the CreateUser method
 
-            // Act
-            var result = await controller.GetAllUsers();
-
-            // Assert
-            result.Should().BeOfType<OkObjectResult>().Which.Value.Should().BeOfType<ApiResponse<List<User>>>()
-                .Which.Data.Should().BeEquivalentTo(userList);
-        }
-
-        [Fact]
-        public async Task GetUsersById_ReturnsOkObjectResult_WithValidData()
-        {
-            // Arrange
-            var controller = new UserController(_userBusiness, _configuration, _logger);
-            var userId = 1;
-            var user = new User {new User { Id = 1, FirstName = "John", LastName = "Doe" },
-                new User { Id = 2, FirstName = "Jane", LastName = "Doe" }
+            var validUser = new User
+            {
+               UserId = 1,
+               UserName = "Test",
+               UserEmail = "Test",  
             };
-            _userBusiness.GetUsersById(userId).Returns(Task.FromResult(new ApiResponse<User> { Data = user }));
+
+            userBusinessMock.CreateUser(Arg.Any<User>()).Returns(validUser);
 
             // Act
-            var result = await controller.GetUsersById(userId);
+            var result = await UserController.CreateUser(validUser);
 
             // Assert
-            result.Should().BeOfType<OkObjectResult>().Which.Value.Should().BeOfType<ApiResponse<User>>()
-                .Which.Data.Should().BeEquivalentTo(user);
-        }
+            result.Should().BeOfType<OkObjectResult>();
+            var okResult = (OkObjectResult)result;
+            okResult.Value.Should().NotBeNull();
+            okResult.Value.Should().BeEquivalentTo(validUser);
 
-        // Add more HttpGet tests as needed
+        }
     }
+
 
 }
 
@@ -185,4 +208,3 @@ namespace UsersApiTest
 
 
 
-    

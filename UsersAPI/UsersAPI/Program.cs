@@ -18,16 +18,27 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer((options) =>
+builder.Services.AddCors(options =>
 {
-
-    options.TokenValidationParameters = new TokenValidationParameters
+    options.AddPolicy(name: "cors",
+    builder =>
     {
-        ValidateLifetime = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("Jwt:Key").Value)),
-        ValidateIssuer = false,
-        ValidateAudience = false
-    };
+        builder
+        .WithOrigins("http://localhost:3000")
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+});
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.Authority = "https://dev-pfm2q2gc2mkf8h7b.us.auth0.com/";
+    options.Audience = "https://localhost:7297/";
 });
 
 var app = builder.Build();
@@ -38,7 +49,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("cors");
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

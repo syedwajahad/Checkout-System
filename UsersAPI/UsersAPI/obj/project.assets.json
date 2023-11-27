@@ -1786,11 +1786,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UsersAPI\\UsersAPI\\UsersAPI.csproj",
+      "projectUniqueName": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\UsersAPI\\UsersAPI.csproj",
       "projectName": "UsersAPI",
-      "projectPath": "D:\\UsersAPI\\UsersAPI\\UsersAPI.csproj",
+      "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\UsersAPI\\UsersAPI.csproj",
       "packagesPath": "C:\\Users\\AU0011ES\\.nuget\\packages\\",
-      "outputPath": "D:\\UsersAPI\\UsersAPI\\obj\\",
+      "outputPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\UsersAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1811,14 +1811,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\UsersAPI\\users.Business\\User.Business.csproj": {
-              "projectPath": "D:\\UsersAPI\\users.Business\\User.Business.csproj"
+            "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.Business\\User.Business.csproj": {
+              "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.Business\\User.Business.csproj"
             },
-            "D:\\UsersAPI\\users.DataAccess\\User.DataAccess.csproj": {
-              "projectPath": "D:\\UsersAPI\\users.DataAccess\\User.DataAccess.csproj"
+            "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.DataAccess\\User.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.DataAccess\\User.DataAccess.csproj"
             },
-            "D:\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj": {
-              "projectPath": "D:\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj"
+            "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj": {
+              "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj"
             }
           }
         }

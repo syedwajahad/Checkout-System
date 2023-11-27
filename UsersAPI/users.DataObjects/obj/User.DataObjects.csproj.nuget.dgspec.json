@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj": {}
+    "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj": {}
   },
   "projects": {
-    "D:\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj": {
+    "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj",
+        "projectUniqueName": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj",
         "projectName": "User.DataObjects",
-        "projectPath": "D:\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj",
+        "projectPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.DataObjects\\User.DataObjects.csproj",
         "packagesPath": "C:\\Users\\AU0011ES\\.nuget\\packages\\",
-        "outputPath": "D:\\UsersAPI\\users.DataObjects\\obj\\",
+        "outputPath": "C:\\Users\\AU0011ES\\OneDrive - WSA\\Desktop\\Checkout-System\\UsersAPI\\users.DataObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

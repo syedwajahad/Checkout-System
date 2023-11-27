@@ -13,3 +13,18 @@ D:\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.dll
 D:\OffersApi\Offers.DataAccess\obj\Debug\net6.0\refint\Offer.DataAccess.dll
 D:\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.pdb
 D:\OffersApi\Offers.DataAccess\obj\Debug\net6.0\ref\Offer.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\bin\Debug\net6.0\Offer.DataAccess.deps.json
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\bin\Debug\net6.0\Offer.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\bin\Debug\net6.0\Offer.DataAccess.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\bin\Debug\net6.0\Offer.DataObjects.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\bin\Debug\net6.0\Offer.DataObjects.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.csproj.AssemblyReference.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.AssemblyInfoInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.AssemblyInfo.cs
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.csproj.CopyComplete
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\refint\Offer.DataAccess.dll
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\Offer.DataAccess.pdb
+C:\Users\AU0011ES\OneDrive - WSA\Desktop\Checkout-System\OffersApi\Offers.DataAccess\obj\Debug\net6.0\ref\Offer.DataAccess.dll
