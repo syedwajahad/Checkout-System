@@ -36,7 +36,7 @@ namespace users.DataAccess.implementation
                 var existingUser = await _connection.QueryFirstOrDefaultAsync<User>(Queries.CheckUsers, new { email = user.UserEmail });
                 if (existingUser != null)
                 {
-                    throw new Exception("User already exists");
+                    return user;
                 }
                 else
                 {

@@ -58,8 +58,8 @@ namespace UsersAPI.Controllers
             var roles = new List<String>() { "ADMIN" };
 
             var userRole = valid.Claims.ToList().Find((claim) => claim.Type == "role");
-            var authorizedRoles = roles.Find((role) => role == userRole.Value);
-            if (authorizedRoles.Length == 0)
+            var authorizedRoles = roles.Find((role) => role == userRole!.Value);
+            if (authorizedRoles!.Length == 0)
             {
                 return Unauthorized();
             }
@@ -95,12 +95,12 @@ namespace UsersAPI.Controllers
         public async Task<IActionResult> UpdateUsers(User user, int UserId)
         {
             var token = new JwtSecurityTokenHandler();
-            var valid = token.ReadJwtToken(HttpContext.Request.Headers.Authorization.ToString().Split(" ")[1]);
+            var valid = token.ReadJwtToken(HttpContext.Request!.Headers!.Authorization!.ToString().Split(" ")[1]);
             var roles = new List<String>() { "ADMIN" };
 
             var userRole = valid.Claims.ToList().Find((claim) => claim.Type == "role");
-            var authorizedRoles = roles.Find((role) => role == userRole.Value);
-            if (authorizedRoles.Length == 0)
+            var authorizedRoles = roles.Find((role) => role == userRole!.Value);
+            if (authorizedRoles!.Length == 0)
             {
                 return Unauthorized();
             }
